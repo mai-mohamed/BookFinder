@@ -1,9 +1,9 @@
 import React from "react";
 
-function BookCard(){
+function BookCard({bookTitle}){
     return(
         <div>
-            book card
+            <p>{bookTitle}</p>
         </div>
     )
 }
