@@ -8,14 +8,14 @@ function BookList(props) {
   });
   return (
     <div>
-      {props.bookData &&
+      {props.bookData ?
         props.bookData.map((book) => (
           <BookCard key={book.id}
             bookTitle={book.volumeInfo.title}
             bookImg={book.volumeInfo.imageLinks.smallThumnail}
             bookPublisher={book.volumeInfo.description}
           />
-        ))}
+        )):<p>please enter what you want to search</p>}
     </div>
   );
 }
