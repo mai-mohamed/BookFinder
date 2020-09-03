@@ -1,11 +1,10 @@
-import React from 'react';
-import BookFinder from './BookFinder';
-
+import React from "react";
+import BookFinder from "./BookFinder";
 
 function App() {
   return (
-    <div >
-   <BookFinder/>
+    <div>
+      <BookFinder />
     </div>
   );
 }

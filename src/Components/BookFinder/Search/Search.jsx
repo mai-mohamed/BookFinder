@@ -7,7 +7,6 @@ import CommonInputText from "../../Common/InputText";
 import { searchAction } from "../../../Store/ActionCreator/SearchActionCreator";
 
 function Search(props) {
-
   const formik = useFormik({
     initialValues: {
       name: "",
