@@ -1,9 +1,9 @@
 import React from "react";
 import { TextField } from "@material-ui/core";
-function CommonInputText({ id, label }) {
+function CommonInputText({ name, label ,handleChange }) {
   return (
     <div>
-      <TextField id={id} label={label} />
+      <TextField  label={label} name={name} onChange={handleChange}/>
     </div>
   );
 }
