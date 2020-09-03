@@ -1,7 +1,5 @@
 import {
-  SEARCH_ACTION_SAGA,
-  SEARCH_ACTION,
-} from "../ActionTypes/SearchActionTypes";
+  SEARCH_ACTION_SAGA} from "../ActionTypes/SearchActionTypes";
 import { getData } from "../ActionCreator/GetDataActionCreator";
 import { takeEvery, call, put } from "redux-saga/effects";
 import axios from "axios";

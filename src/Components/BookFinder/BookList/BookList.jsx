@@ -9,7 +9,13 @@ function BookList(props) {
   return (
     <div>
       {props.bookData &&
-        props.bookData.map((book) => <BookCard bookTitle={book.id} />)}
+        props.bookData.map((book) => (
+          <BookCard key={book.id}
+            bookTitle={book.volumeInfo.title}
+            bookImg={book.volumeInfo.imageLinks.smallThumnail}
+            bookPublisher={book.volumeInfo.description}
+          />
+        ))}
     </div>
   );
 }
