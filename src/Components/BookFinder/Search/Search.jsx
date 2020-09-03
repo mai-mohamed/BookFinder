@@ -1,4 +1,5 @@
 import React from "react";
+import { Grid } from "@material-ui/core";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { connect } from "react-redux";
@@ -19,12 +20,19 @@ function Search(props) {
   return (
     <div>
       <form onSubmit={formik.handleSubmit}>
-        <CommonInputText
-          label="Book Name"
-          name="name"
-          handleChange={formik.handleChange}
-        />
-        <CommonBtn name="Search" type="submit" />
+        <Grid container>
+          <Grid item xs={4}>
+            <CommonInputText
+              label="Book Name"
+              name="name"
+              handleChange={formik.handleChange}
+            />
+          </Grid>
+
+          <Grid item xs={4}>
+            <CommonBtn name="Search" type="submit" />
+          </Grid>
+        </Grid>
       </form>
     </div>
   );
